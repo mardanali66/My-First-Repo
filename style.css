@@ -1,0 +1,54 @@
+      /* Create a Sticky Navbar */
+      .navbar {
+          position: sticky;
+          /* Set the navbar to stick to the top of the page */
+          top: 0;
+          /* Position the navbar at the top of the page */
+          width: 100%;
+          /* Full width */
+          background-color: #555;
+          /* Dark background */
+      }
+
+      /* Links inside the navbar */
+      .navbar a {
+          float: left;
+          /* Make sure that the links stay side-by-side */
+          display: block;
+          /* Make the links appear as block elements */
+          color: white;
+          /* Text color */
+          text-align: center;
+          /* Center-align text */
+          padding: 14px 20px;
+          /* Add some padding */
+          text-decoration: none;
+          /* Remove underline from links */
+
+      }
+
+      .navbar a.right {
+          float: right;
+      }
+
+      /* Float the links to the right */
+
+      .navbar a.active {
+          background-color: #4CAF50;
+      }
+
+      /* Add an active class for current page*/
+
+      @media screen and (max-width: 600px) {
+          /* When screen is less than 600px wide, stack links on top of each other*/
+
+          .navbar a {
+              float: none;
+              display: block;
+          }
+
+          .navbar a.right {
+              float: none;
+          }
+
+      }
